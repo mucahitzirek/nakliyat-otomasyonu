@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1500.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FirmaBilgileri">
+   <children>
+      <VBox alignment="CENTER" layoutY="36.0" prefHeight="865.0" prefWidth="164.0" spacing="30.0" styleClass="VBox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="36.0">
+         <children>
+            <Label text="Firma Bilgilerini Giriniz" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="ftxtfirmaadi" focusColor="WHITE" labelFloat="true" promptText="Firma Adı" styleClass="text" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="ftxtfirmaadresi" focusColor="WHITE" labelFloat="true" promptText="Firma Adresi" styleClass="text" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="ftxtfirmayuk" focusColor="WHITE" labelFloat="true" promptText="Firma Yük" styleClass="text" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="ftxtfirmatelefon" focusColor="WHITE" labelFloat="true" promptText="Firma Telefon" styleClass="text" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="ftxtfirmaemail" focusColor="WHITE" labelFloat="true" promptText="Firma Email" styleClass="text" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="ftxtfirmafax" focusColor="WHITE" labelFloat="true" promptText="Firma Fax" styleClass="text" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXTextField>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <TableView fx:id="TableviewFirma" layoutX="164.0" onMouseClicked="#tableFirmasec" prefHeight="834.0" prefWidth="1336.0" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="164.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="tbwfirmaadi" prefWidth="90.0" text="Firma Adı" />
+            <TableColumn fx:id="tbwfirmaadresi" prefWidth="90.0" text="Firma Adresi" />
+            <TableColumn fx:id="tbwfirmayuk" prefWidth="90.0" text="Firma Yük" />
+            <TableColumn fx:id="tbwfirmatelefon" prefWidth="90.0" text="Firma Telefon" />
+            <TableColumn fx:id="tbwfirmaemail" prefWidth="90.0" text="Firma Email" />
+            <TableColumn fx:id="tbwfirmafax" prefWidth="90.0" text="Firma Fax" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="192.0" layoutY="832.0" prefHeight="59.0" prefWidth="577.0" spacing="5.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="192.0" AnchorPane.rightAnchor="55.0">
+         <children>
+            <JFXButton onAction="#firmalistelebtn" prefHeight="45.0" prefWidth="120.0" text="LİSTELE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#firmaeklebtn" prefHeight="45.0" prefWidth="120.0" text="EKLE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#firmaguncellebtn" prefHeight="45.0" prefWidth="120.0" text="GÜNCELLE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#firmasilbtn" prefHeight="45.0" prefWidth="120.0" text="SİL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" focusTraversable="true" prefHeight="39.0" prefWidth="164.0" spacing="2.0" styleClass="VBox" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="aramatext" maxHeight="1.7976931348623157E308" prefHeight="4.0" prefWidth="142.0" promptText="Arama" style="-fx-text-fill: black;" HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIcon fx:id="ara" glyphName="SEARCH" onMouseClicked="#arabtn" size="2em" wrappingWidth="23.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

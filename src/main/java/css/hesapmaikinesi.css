@@ -1,0 +1,11 @@
+/* #01b2ec #3485e75 #576574 #3E5465 #9C27B0 #1D232A #353D43	#4A4F55 #0ABF35 Parlak Yeþil-#40f72f*/  
+.button{
+	-fx-background-color: #3E5465;
+	-fx-text-fill: white;
+}
+.root{
+	-fx-background-color: white;
+}
+.islembut{
+	-fx-background-color: #292E35;
+}

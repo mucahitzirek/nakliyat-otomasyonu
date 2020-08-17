@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="868.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AnaSayfa">
+   <children>
+      <VBox alignment="CENTER" focusTraversable="true" prefHeight="474.0" prefWidth="162.0" spacing="20.0" styleClass="anaekranVbox" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="kullaniciadi" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="160.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" focusTraversable="true" onMouseClicked="#yeniseferolustur" prefHeight="70.0" prefWidth="0.0" styleClass="nonSelection">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ımage/clipboard.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="43.0" prefWidth="115.0" text="YENİ SEFER " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="428.0" prefWidth="160.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" focusTraversable="true" onMouseClicked="#soforbilgigit" prefHeight="70.0" prefWidth="0.0" styleClass="nonSelection">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ımage/sofor.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="43.0" prefWidth="115.0" text="ŞOFÖR LİSTESİ" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" onMouseClicked="#aracgit" prefHeight="70.0" prefWidth="0.0" styleClass="nonSelection">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ımage/truck%20(1).png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="112.0" text="ARAÇ LİSTESİ" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="0.0" styleClass="nonSelection">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ımage/enterprise.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#firmabilgigit" prefHeight="43.0" prefWidth="112.0" text="FİRMA BİLGİLERİ" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" onMouseClicked="#haritagit" prefHeight="70.0" prefWidth="0.0" styleClass="nonSelection">
+                     <children>
+                        <ImageView fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ımage/path.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="112.0" text="YOL DURUMU" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" onMouseClicked="#notlarimgit" prefHeight="70.0" prefWidth="0.0" styleClass="nonSelection">
+                     <children>
+                        <ImageView fitHeight="39.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ımage/agendas.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="112.0" text="NOTLARIM" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" onMouseClicked="#islemler" prefHeight="70.0" prefWidth="0.0" styleClass="nonSelection">
+                     <children>
+                        <ImageView fitHeight="39.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ımage/accounting.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" blendMode="LIGHTEN" contentDisplay="CENTER" prefHeight="43.0" prefWidth="112.0" text="İŞLEMLER" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox fx:id="anaekranvbox" layoutX="162.0" layoutY="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="521.0" prefWidth="706.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="162.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1300.0" prefWidth="900.0">
+               <children>
+                  <ImageView cache="true" cacheHint="QUALITY" fitHeight="371.0" fitWidth="589.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../ımage/DİYAR.png" />
+                     </image>
+                  </ImageView>
+                  <PieChart fx:id="pie" onMouseClicked="#pieclick" />
+                  <Label text="SON AYIN İSTATİSTİĞİ" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <MenuBar layoutX="162.0" layoutY="2.0" prefHeight="0.0" prefWidth="706.0" AnchorPane.leftAnchor="162.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="+ Yeni Yük Ekle" />
+            <Menu mnemonicParsing="false" text="+ Yeni Firma Ekle" />
+            <Menu mnemonicParsing="false" text="Listeler">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Şoför Listesi" />
+                  <MenuItem mnemonicParsing="false" text="Araç Listesi" />
+                  <MenuItem mnemonicParsing="false" text="VS. Liste Eklenecek" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Hesap Makinesi" />
+         </menus>
+         <effect>
+            <DropShadow />
+         </effect>
+      </MenuBar>
+      <HBox alignment="CENTER" layoutY="499.0" prefHeight="49.0" prefWidth="162.0" style="-fx-background-color: #1D232A;" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <JFXButton focusTraversable="false" onAction="#YeninotbtnAna" prefHeight="40.0" prefWidth="146.0" text="+ Yeni Not" textFill="#31e8f5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" layoutY="472.0" prefHeight="24.0" prefWidth="162.0" spacing="3.0" style="-fx-background-color: #1D232A;" AnchorPane.bottomAnchor="97.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#hesapgit" prefHeight="25.0" prefWidth="70.0" text="Hes.Mak" textFill="WHITE" />
+            <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="71.0" text="ANA MENÜ" textFill="WHITE" />
+            <FontAwesomeIcon glyphName="ARROW_LEFT" onMouseClicked="#anamenugit" size="2em" stroke="#838383">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIcon>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" focusTraversable="true" layoutY="547.0" onMouseClicked="#yoneticigit" prefHeight="49.0" prefWidth="162.0" styleClass="yonetici" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ımage/yonetici.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="43.0" prefWidth="115.0" text="Yönetici İşlemleri" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </HBox>
+   </children>
+</AnchorPane>

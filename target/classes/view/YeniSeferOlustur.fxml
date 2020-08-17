@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="yenisefer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="995.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.YeniSeferOlustur">
+   <children>
+      <ImageView accessibleRole="HYPERLINK" fitHeight="475.0" fitWidth="1002.0" layoutX="-7.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ımage/tırlarso0luk.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <HBox alignment="CENTER" layoutY="58.0" prefHeight="335.0" prefWidth="230.0" spacing="10.0">
+         <children>
+            <VBox spacing="27.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <JFXComboBox fx:id="comboad" editable="true" focusColor="WHITE" labelFloat="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#soforadsec" prefHeight="35.0" prefWidth="211.0" promptText="Şoför Ad Soyad" styleClass="combo" unFocusColor="WHITE" />
+                  <JFXComboBox fx:id="combotel" editable="true" focusColor="WHITE" labelFloat="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="211.0" promptText="Telefon" styleClass="combo" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtehlyet" focusColor="WHITE" labelFloat="true" promptText="Ehliyet" styleClass="text" unFocusColor="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtruhsat" focusColor="WHITE" labelFloat="true" promptText="Ruhsat" styleClass="text" unFocusColor="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txthesap" focusColor="WHITE" labelFloat="true" promptText="Hesap" styleClass="text" unFocusColor="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="14.0" layoutY="21.0" prefHeight="27.0" prefWidth="207.0" text="Şoför Bilgilerini Giriniz" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="1.0" prefHeight="25.0" prefWidth="247.0" text="Araç Bilgilerini Giriniz" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <HBox fx:id="arachbox" alignment="CENTER" layoutX="282.0" layoutY="22.0" prefHeight="427.0" prefWidth="480.0" spacing="10.0">
+         <children>
+            <VBox prefWidth="194.0" spacing="30.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <JFXTextField fx:id="txtplakano1" focusColor="WHITE" labelFloat="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Plaka No" styleClass="text" unFocusColor="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="comboaraccins1" editable="true" focusColor="WHITE" labelFloat="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="211.0" promptText="Araç Cinsi" styleClass="combo" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtyukcinsi1" focusColor="WHITE" labelFloat="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Yük Cinsi" styleClass="text" unFocusColor="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtyuklemeyeri1" focusColor="WHITE" labelFloat="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Yükleme Yeri" styleClass="text" unFocusColor="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtbosaltmayeri1" focusColor="WHITE" labelFloat="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Boşaltma Yeri" styleClass="text" unFocusColor="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="339.0" prefWidth="211.0" spacing="32.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <JFXComboBox fx:id="combofirma" editable="true" focusColor="WHITE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="211.0" promptText="Firma Ad" styleClass="combo" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtyukfiyat1" focusColor="WHITE" labelFloat="true" prefHeight="23.0" prefWidth="150.0" promptText="Yük Fiyat" styleClass="text" unFocusColor="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtyukmiktar1" focusColor="WHITE" labelFloat="true" prefWidth="150.0" promptText="Yük Miktar" styleClass="text" unFocusColor="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtkomisyon1" focusColor="WHITE" labelFloat="true" prefWidth="150.0" promptText="Komisyon" styleClass="text" unFocusColor="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <DatePicker fx:id="dateyuklemetarih1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Yükeleme Tarih" />
+                  <DatePicker fx:id="datebosaltmatarih1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Boşaltma Tarih" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <JFXButton layoutX="50.0" layoutY="393.0" onAction="#soforkaytdet" prefHeight="39.0" prefWidth="117.0" text="ŞOFÖRÜ KAYDET" textFill="WHITE" />
+      <JFXButton layoutX="784.0" layoutY="322.0" onAction="#arackaytdet" prefHeight="39.0" prefWidth="117.0" text="ARACI KAYDET" textFill="WHITE" />
+      <TextArea disable="true" layoutX="784.0" layoutY="102.0" prefHeight="198.0" prefWidth="197.0" text="ŞOFÖR BİLGİLERİNİ &#10;KAYDETTİKTEN SONRA &#10;ARAÇ BİLGİLERİNİ &#10;KAYDEDİNİZ.&#10;&#10;KAYDI OLAN BİR ŞOFÖRE &#10;YÜK EKLEMEK İÇİN &#10;ADINI VE TELEFON&#10;NUMARASINI SEÇMENİZ &#10;YETERLİDİR.&#10;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="522.0" layoutY="6.0" text="YÜKÜ ALDIĞINIZ FİRMAYI SEÇİNİZ" textFill="WHITE" />
+   </children>
+</AnchorPane>

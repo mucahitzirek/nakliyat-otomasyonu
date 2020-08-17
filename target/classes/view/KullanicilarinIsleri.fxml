@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="938.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KullanicilarinIsleri">
+   <children>
+      <TableView fx:id="Tableviewarac" prefHeight="590.0" prefWidth="938.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="108.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="tbwkullanicidi" prefWidth="90.0" text="Kullanıcı ID" />
+            <TableColumn fx:id="tbwplakano" prefWidth="90.0" text="Plaka No" />
+            <TableColumn fx:id="tbwaraccinsi" prefWidth="90.0" text="Araç Cinsi" />
+            <TableColumn fx:id="tbwyukcinsi" prefWidth="90.0" text="Yük Cinsi" />
+            <TableColumn fx:id="tbwyuklemeyeri" prefWidth="90.0" text="Yükleme Yeri" />
+            <TableColumn fx:id="tbwyuklemetarihi" prefWidth="90.0" text="Yükleme Tarihi" />
+            <TableColumn fx:id="tbwbosaltmayeri" prefWidth="90.0" text="Boşaltma Yeri" />
+            <TableColumn fx:id="tbwbosaltmatarihi" prefWidth="90.0" text="Boşaltma Tarihi" />
+            <TableColumn fx:id="tbwnetmiktar" prefWidth="90.0" text="Yük Miktar" />
+            <TableColumn fx:id="tbwyukfiyati" prefWidth="90.0" text="Yük Fiyatı" />
+            <TableColumn fx:id="tbwkomisyon" prefWidth="90.0" text="Komisyon" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="132.0" layoutY="614.0" prefHeight="72.0" prefWidth="633.0" spacing="10.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="132.0" AnchorPane.rightAnchor="173.0">
+         <children>
+            <JFXComboBox fx:id="kullaniciadlari" prefHeight="25.0" prefWidth="155.0" promptText="Kullanıcı Seç" />
+            <JFXButton onAction="#kullanicilistele" prefHeight="49.0" prefWidth="172.0" text="Kullaniciya Göre Listele" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#exelYedegi" prefHeight="49.0" prefWidth="172.0" text="Exel' Aktar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

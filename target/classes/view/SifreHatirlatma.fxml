@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="372.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SifreHatirlatma">
+   <children>
+      <VBox alignment="CENTER" layoutX="58.0" layoutY="134.0" prefHeight="191.0" prefWidth="256.0" spacing="20.0">
+         <children>
+            <JFXTextField fx:id="email" prefHeight="34.0" prefWidth="182.0" promptText="Emailiniz" />
+            <JFXButton onAction="#tamam" prefHeight="34.0" prefWidth="100.0" text="TAMAM" textFill="WHITE" />
+         </children>
+      </VBox>
+      <Label layoutX="59.0" layoutY="37.0" text="Kayıt oldugunuz emailinizi girmek zorundasınız.!" />
+      <JFXComboBox fx:id="yoneticiadlari" layoutX="58.0" layoutY="89.0" prefHeight="45.0" prefWidth="256.0" promptText="Yöneticinizi Seçiniz" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="GirisAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KullaniciGirisi">
+   <children>
+      <Pane fx:id="anapane" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="400.0" style="-fx-background-color: #FFF;">
+         <children>
+            <ImageView fitHeight="206.0" fitWidth="256.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ımage/Adsız.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="100.0" layoutY="186.0" text="Kullanıcı Bilgilerinizi Giriniz">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="kullaniciadi" labelFloat="true" layoutX="75.0" layoutY="239.0" prefHeight="35.0" prefWidth="230.0" promptText="Kullanıcı Adı">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="kullanicisifresi" labelFloat="true" layoutX="75.0" layoutY="312.0" prefHeight="35.0" prefWidth="230.0" promptText="Kullanıcı Şifresi">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="213.0" layoutY="364.0" onMouseClicked="#sifrehatirlama" prefHeight="20.0" prefWidth="92.0" styleClass="sifrelbl" text="Şifre Hatırlama">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <JFXButton layoutX="88.0" layoutY="400.0" onAction="#giris" prefHeight="52.0" prefWidth="205.0" styleClass="girisBtn" text="GİRİŞ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <Label layoutX="99.0" layoutY="488.0" prefHeight="20.0" prefWidth="128.0" text="Yeni Kullanıcı Kaydı İçin " />
+            <FontAwesomeIcon glyphName="CLOSE" layoutX="379.0" layoutY="20.0" onMouseClicked="#closeapp" size="1.5em" styleClass="close" text="" />
+            <Label layoutX="227.0" layoutY="490.0" onMouseClicked="#kullanicikaydi" text="Tıklayınız">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="100.0" layoutY="463.0" text="Yeni Yonetici Kaydı için" />
+            <Label layoutX="227.0" layoutY="464.0" onMouseClicked="#yoneticikaydi" text="Tıklayınız">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <JFXButton layoutX="114.0" layoutY="530.0" onAction="#yonetyicigirisi" prefHeight="42.0" prefWidth="172.0" styleClass="girisBtn" text="Yönetici Girişi">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

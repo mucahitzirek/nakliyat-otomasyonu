@@ -1,0 +1,148 @@
+.sifrelbl{
+	-fx-text-fill: #004DBB;
+}
+.sifrelbl:hover{
+	-fx-text-fill: blue;
+}
+.jfx-date-picker .jfx-button{ -fx-background-color: #2ecc71; }
+.yoneticibtn{
+	-fx-background-color: #292E35;
+	-fx-background-radius: 30.0;
+	-fx-border-color: #2ecc71;
+	-fx-border-width: 2.0 2.0 2.0 5.0;
+	-fx-border-radius: 20.0;
+	-fx-border-insets: 0.0;
+}
+.yoneticibtn:hover{
+	-fx-background-color: #292E35;
+	-fx-border-color: #40f72f;
+}
+.yoneticibtnen{
+	-fx-background-color: #292E35;
+	-fx-background-radius: 30.0;
+	-fx-border-color: #ff3838;
+	-fx-border-width: 2.0 2.0 2.0 5.0;
+	-fx-border-radius: 20.0;
+	-fx-border-insets: 0.0;
+}
+.yoneticibtnen:hover{
+    -fx-background-color: #292E35;
+	-fx-border-color: #D50000;
+}
+.girisBtn{
+	-fx-background-color: #004DBB;
+	-fx-text-fill: white;
+	-fx-background-radius: 20.0px;
+}
+.borderyak{
+	-fx-border-color: #e74c3c;
+}
+.girisBtn:hover{
+	-fx-background-color: transparent ;
+	-fx-background-radius: 20.0px;
+	-fx-text-fill: black;
+	-fx-border-color: #004DBB;
+	-fx-border-width: 2.0px;
+	-fx-border-style: solid;
+	-fx-border-radius: 20.0px;
+}
+.close{
+	-fx-fill: black;
+}
+.close:hover{
+	-fx-fill: red;
+}
+/* #01b2ec #3485e75 #576574 #3E5465 #9C27B0 #1D232A #353D43	#4A4F55 #0ABF35 Parlak Yesil-#40f72f*/
+
+.button{
+	-fx-background-color: #292E35;
+}
+
+.yeninotback{
+	-fx-background-color: #DEDEDE;
+}
+ .comboana{
+ 	-fx-background-color: transparent;
+ 	-fx-text-fill: black;
+ 	-fx-prompt-text-fill: black;
+ }
+.VBox{
+	-fx-background-color: #3E5465;
+	-fx-border-color: black;
+}
+.anaekranVbox
+{
+	-fx-background-color: #1D232A;
+	-fx-border-color: black;
+}
+.labelNotlar{
+	-fx-background-color: #3E5465;
+}
+.hBoxback{
+	-fx-background-color: #353D43;
+
+}
+.aratext{
+	-fx-background-color: #292E35;
+	-fx-border-color: #2ecc71;
+	-fx-border-width: 1.0 1.0 1.0 5.0;
+}
+.Selection{
+	-fx-background-color: #292E35;
+	-fx-border-color: #2ecc71;
+	-fx-border-width: 0.0 0.0 0.0 5.0;
+}
+
+.yonetici{
+	-fx-background-color:  #1D232A;
+}
+.yonetici:hover{
+	-fx-background-color: #292E35;
+}
+.yonetici:pressed{
+	-fx-background-color: #353D43;
+}
+.nonSelection{
+	-fx-border-color: #0ABF35;
+	-fx-border-width: 0.0 0.0 0.0 4.0;
+
+	}
+.nonSelection:focused{
+	-fx-background-color: #7156DD;
+	-fx-border-color: #CDD1D6;
+	-fx-border-width: 0.0px 0.0px 0.0px 3.0px;
+}
+
+.nonSelection:hover{
+	-fx-background-color: #292E35;
+	-fx-border-color: #40f72f;
+}
+.nonSelection:pressed{
+	-fx-background-color: #353D43;
+}
+
+.combo{
+	-fx-font-size: 20.0px;
+	-fx-prompt-text-fill: Bold;
+	-fx-text-inner-color: white;
+    -fx-prompt-text-fill: white;
+}
+.text{
+	-fx-text-inner-color: white;
+    -fx-prompt-text-fill: white;
+}
+.text-field > .text {
+        -fx-effect: dropshadow( two-pass-box , blue , 0.5, 10.0 , 1.0 , 1.0);
+}
+.tablevi{
+	-fx-text-inner-color: black;
+    -fx-prompt-text-fill: black;
+}
+.date-picker .text-field {
+    -fx-control-inner-background: white ;
+    -fx-text-inner-color: black;
+}
+.menubar{
+	-fx-background-color:#292E35;
+	-fx-text-fill: white;
+	}

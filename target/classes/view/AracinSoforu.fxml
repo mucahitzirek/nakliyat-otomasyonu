@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="938.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AracinSoforu">
+   <children>
+      <TableView fx:id="Tableviewarac" layoutY="81.0" prefHeight="462.0" prefWidth="938.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="157.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.0">
+         <columns>
+            <TableColumn fx:id="tbwplakano" prefWidth="90.0" text="Plaka No" />
+            <TableColumn fx:id="tbwaraccinsi" prefWidth="90.0" text="Araç Cinsi" />
+            <TableColumn fx:id="tbwyukcinsi" prefWidth="90.0" text="Yük Cinsi" />
+            <TableColumn fx:id="tbwyuklemeyeri" prefWidth="90.0" text="Yükleme Yeri" />
+            <TableColumn fx:id="tbwyuklemetarihi" prefWidth="90.0" text="Yükleme Tarihi" />
+            <TableColumn fx:id="tbwbosaltmayeri" prefWidth="90.0" text="Boşaltma Yeri" />
+            <TableColumn fx:id="tbwbosaltmatarihi" prefWidth="90.0" text="Boşaltma Tarihi" />
+            <TableColumn fx:id="tbwnetmiktar" prefWidth="90.0" text="Yük Miktar" />
+            <TableColumn fx:id="tbwyukfiyati" prefWidth="90.0" text="Yük Fiyatı" />
+            <TableColumn fx:id="tbwkomisyon" prefWidth="90.0" text="Komisyon" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <VBox alignment="CENTER" layoutX="10.0" spacing="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="37.0" prefWidth="175.0" text="ŞOFÖRE AİT SEFER BİLGİLERİ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="soforadi" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="37.0" prefWidth="810.0" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="102.0" layoutY="547.0" prefHeight="119.0" prefWidth="652.0" spacing="10.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="184.0">
+         <children>
+            <VBox alignment="CENTER" spacing="5.0">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="354.0" text="GİRİLEN TARİHLER ARASINDAKİ YÜKLEMELERİ GÖRÜNTÜLE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker fx:id="date1" prefHeight="32.0" prefWidth="192.0" />
+                  <JFXDatePicker fx:id="date2" prefHeight="37.0" prefWidth="196.0" />
+               </children>
+            </VBox>
+            <JFXButton onAction="#tarihlistele" prefHeight="49.0" prefWidth="155.0" text="GÖRÜNTÜLE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="776.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Gider">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="8.0" layoutY="58.0" prefHeight="338.0" prefWidth="387.0" spacing="40.0">
+         <children>
+            <Label text="Gider Değeri Ve Açıklamasını Girerek Gider Ekleyiniz">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtgider" labelFloat="true" maxWidth="200.0" prefHeight="25.0" prefWidth="150.0" promptText="Gider Değerini Giriniz" />
+            <JFXTextArea fx:id="aciklama" labelFloat="true" maxWidth="200.0" prefHeight="126.0" prefWidth="182.0" promptText="Gider Açıklamasını Giriniz" />
+            <JFXButton focusTraversable="false" onAction="#gider" prefHeight="48.0" prefWidth="161.0" text="GİDER EKLE" textFill="WHITE" />
+         </children>
+      </VBox>
+      <TableView fx:id="tableviewgider" layoutX="404.0" prefHeight="347.0" prefWidth="372.0">
+        <columns>
+          <TableColumn fx:id="tbwaciklama" prefWidth="75.0" text="Açıklama" />
+          <TableColumn fx:id="tbwgider" prefWidth="75.0" text="Gider" />
+            <TableColumn fx:id="tbwtarih" prefWidth="75.0" text="Tarih" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton focusTraversable="false" layoutX="395.0" layoutY="358.0" onAction="#giderlistele" prefHeight="48.0" prefWidth="161.0" text="GİDERLERİNİ LİSTELE" textFill="WHITE" />
+      <JFXButton focusTraversable="false" layoutX="579.0" layoutY="358.0" onAction="#gidersil" prefHeight="48.0" prefWidth="161.0" text="GİDERİ SİL" textFill="WHITE" />
+   </children>
+</AnchorPane>

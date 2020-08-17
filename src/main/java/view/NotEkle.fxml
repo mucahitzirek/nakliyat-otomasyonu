@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="600.0" prefHeight="450.0" prefWidth="600.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NotEkle">
+   <children>
+      <VBox alignment="CENTER" layoutX="152.0" layoutY="8.0" prefHeight="429.0" prefWidth="363.0" spacing="35.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="8.0">
+         <children>
+            <JFXTextField fx:id="YeninotBaslik" focusTraversable="false" labelFloat="true" prefHeight="38.0" prefWidth="353.0" styleClass="jtext">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <TextArea fx:id="YeninotDetay" prefHeight="229.0" prefWidth="353.0" promptText="Not Detayı...." wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextArea>
+            <JFXButton onAction="#YeninotKaydetbtn" prefHeight="44.0" prefWidth="136.0" text="NOTU KAYDET" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <Label layoutX="24.0" layoutY="47.0" prefHeight="28.0" prefWidth="116.0" text="NOT BAŞLIK :" textFill="#42a7f5" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="47.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="101.0" prefHeight="28.0" prefWidth="116.0" text="NOT DETAY :" textFill="#42a7f5" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="101.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
