@@ -1,2 +1,3 @@
 # nakliyat-otomasyonu
-Nakliyat takip kayıt otomasyonu
+Java-Fx ile,
+Nakliyat takip, kayıt otomasyonu
